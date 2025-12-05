@@ -1,0 +1,120 @@
+2025-12-05 15:52:27,421 - ETLPipeline - INFO - ============================================================
+2025-12-05 15:52:27,421 - ETLPipeline - INFO - STARTING ETL PIPELINE
+2025-12-05 15:52:27,421 - ETLPipeline - INFO - ============================================================
+2025-12-05 15:52:27,421 - ETLPipeline - INFO - Pipeline ID: etl_20251205_155227
+2025-12-05 15:52:27,421 - ETLPipeline - INFO - Configuration: D:\September-AI\Pipeline-Project\etl\config\config.yaml
+2025-12-05 15:52:27,421 - ETLPipeline - INFO - Loading source data...
+2025-12-05 15:52:27,544 - ETLPipeline - INFO - Loaded 50,000 rows from SupportTickets_50k.csv
+2025-12-05 15:52:27,544 - ETLPipeline - INFO - Columns: ['ticket_id', 'subject', 'description', 'priority', 'status', 'category', 'origin', 'customer_id', 'assigned_agent', 'created_at', 'resolved_at', 'sla_breached', 'product', 'channel', 'severity']
+2025-12-05 15:52:27,544 - ETLPipeline - INFO - Saving raw data copy...
+2025-12-05 15:52:27,711 - ETLPipeline - INFO - Saved raw data: support_tickets_raw_20251205_155227.parquet
+2025-12-05 15:52:27,711 - ETLPipeline - INFO - File size: 1,918,185 bytes
+2025-12-05 15:52:27,711 - ETLPipeline - INFO - Raw dataset: 50,000 rows, 15 columns
+2025-12-05 15:52:27,711 - ETLPipeline - INFO - Raw data archived: support_tickets_raw_20251205_155227.parquet
+2025-12-05 15:52:27,712 - ETLPipeline - INFO - ==================================================
+2025-12-05 15:52:27,712 - ETLPipeline - INFO - STARTING CLEANING STEP
+2025-12-05 15:52:27,712 - ETLPipeline - INFO - ==================================================
+2025-12-05 15:52:27,712 - DataCleaner - INFO - Starting data cleaning pipeline...
+2025-12-05 15:52:27,712 - DataCleaner - INFO - Removing impossible data...
+2025-12-05 15:52:27,844 - DataCleaner - INFO - Removed 337 records with impossible data:
+2025-12-05 15:52:27,844 - DataCleaner - INFO -   - Date logic violations: 0
+2025-12-05 15:52:27,844 - DataCleaner - INFO -   - Negative ticket IDs: 0
+2025-12-05 15:52:27,844 - DataCleaner - INFO -   - Invalid dates: 337
+2025-12-05 15:52:27,844 - DataCleaner - INFO - Handling missing values...
+2025-12-05 15:52:27,849 - DataCleaner - INFO - Column 'description': 5055 missing values (10.18%)
+2025-12-05 15:52:27,854 - DataCleaner - INFO - Column 'category': 7337 missing values (14.77%)
+2025-12-05 15:52:27,858 - DataCleaner - INFO - Column 'assigned_agent': 14923 missing values (30.05%)
+2025-12-05 15:52:27,859 - DataCleaner - INFO - Column 'resolved_at': 9916 missing values (19.97%)
+2025-12-05 15:52:27,862 - DataCleaner - INFO - Column 'product': 9903 missing values (19.94%)
+2025-12-05 15:52:27,887 - DataCleaner - INFO - Filled 7337 missing values in 'category' with mode: 'Billing'
+2025-12-05 15:52:27,895 - DataCleaner - INFO - Filled 9903 missing values in 'product' with mode: 'Product B'
+2025-12-05 15:53:39,151 - DataCleaner - INFO - Filled 5055 missing 'description' values using similarity-based imputation
+2025-12-05 15:53:39,152 - DataCleaner - INFO - Keeping 9916 null values in 'resolved_at' as per business logic
+2025-12-05 15:53:39,152 - DataCleaner - INFO - Removing duplicates...
+2025-12-05 15:53:39,217 - DataCleaner - INFO - Removed 0 duplicate records:
+2025-12-05 15:53:39,217 - DataCleaner - INFO -   - Exact duplicate rows: 0
+2025-12-05 15:53:39,217 - DataCleaner - INFO -   - Duplicate ticket IDs: 0
+2025-12-05 15:53:39,218 - DataCleaner - INFO - Normalizing text fields...
+2025-12-05 15:53:39,349 - DataCleaner - INFO - Total text normalization changes: 0
+2025-12-05 15:53:39,350 - DataCleaner - INFO - Data cleaning completed: 50,000 -> 49,663 rows
+2025-12-05 15:53:39,350 - ETLPipeline - INFO - Cleaning completed successfully
+2025-12-05 15:53:39,350 - ETLPipeline - INFO - Rows: 50,000 -> 49,663
+2025-12-05 15:53:39,352 - ETLPipeline - INFO - ==================================================
+2025-12-05 15:53:39,352 - ETLPipeline - INFO - STARTING TRANSFORMATION STEP
+2025-12-05 15:53:39,352 - ETLPipeline - INFO - ==================================================
+2025-12-05 15:53:39,352 - DataTransformer - INFO - Starting data transformation pipeline...
+2025-12-05 15:53:39,353 - DataTransformer - INFO - Converting data types...
+2025-12-05 15:53:39,353 - DataTransformer - INFO - Converted 'ticket_id': int64 -> int
+2025-12-05 15:53:39,354 - DataTransformer - INFO - Converted 'customer_id': int64 -> int
+2025-12-05 15:53:39,363 - DataTransformer - INFO - Converted 'created_at': datetime64[ns, UTC] -> datetime
+2025-12-05 15:53:39,363 - DataTransformer - INFO - Converted 'resolved_at': datetime64[ns, UTC] -> datetime
+2025-12-05 15:53:39,363 - DataTransformer - INFO - Converted 'sla_breached': bool -> bool
+2025-12-05 15:53:39,363 - DataTransformer - INFO - Converted 'subject': object -> string
+2025-12-05 15:53:39,363 - DataTransformer - INFO - Converted 'description': object -> string
+2025-12-05 15:53:39,378 - DataTransformer - INFO - Converted 'priority': object -> category
+2025-12-05 15:53:39,382 - DataTransformer - INFO - Converted 'status': object -> category
+2025-12-05 15:53:39,385 - DataTransformer - INFO - Converted 'category': object -> category
+2025-12-05 15:53:39,389 - DataTransformer - INFO - Converted 'origin': object -> category
+2025-12-05 15:53:39,391 - DataTransformer - INFO - Converted 'assigned_agent': object -> string
+2025-12-05 15:53:39,394 - DataTransformer - INFO - Converted 'product': object -> category
+2025-12-05 15:53:39,397 - DataTransformer - INFO - Converted 'channel': object -> category
+2025-12-05 15:53:39,400 - DataTransformer - INFO - Converted 'severity': object -> category
+2025-12-05 15:53:39,402 - DataTransformer - INFO - Creating derived columns...
+2025-12-05 15:53:39,583 - DataTransformer - INFO - Created 22 derived columns
+2025-12-05 15:53:39,583 - DataTransformer - INFO - Encoding categorical variables...
+2025-12-05 15:53:39,583 - DataTransformer - INFO - Encoded 'priority' using label encoding
+2025-12-05 15:53:39,583 - DataTransformer - INFO - Encoded 'severity' using label encoding
+2025-12-05 15:53:39,583 - DataTransformer - INFO - Standardizing column names...
+2025-12-05 15:53:39,583 - DataTransformer - INFO - Standardized 0 column names
+2025-12-05 15:53:39,583 - DataTransformer - INFO - Transformation completed: 16 -> 40 columns
+2025-12-05 15:53:39,583 - ETLPipeline - INFO - Transformation completed successfully
+2025-12-05 15:53:39,583 - ETLPipeline - INFO - Columns: 40 -> 40
+2025-12-05 15:53:39,583 - ETLPipeline - INFO - ==================================================
+2025-12-05 15:53:39,583 - ETLPipeline - INFO - STARTING VALIDATION STEP
+2025-12-05 15:53:39,583 - ETLPipeline - INFO - ==================================================
+2025-12-05 15:53:39,583 - DataValidator - INFO - Starting data validation pipeline...
+2025-12-05 15:53:39,583 - DataValidator - INFO - Validating required fields...
+2025-12-05 15:53:39,593 - DataValidator - INFO - Required fields validation: PASSED
+2025-12-05 15:53:39,593 - DataValidator - INFO - Validating missing values...
+2025-12-05 15:53:39,605 - DataValidator - WARNING - Column 'resolution_days' approaching missing value threshold: 19.97%
+2025-12-05 15:53:39,615 - DataValidator - WARNING - Column 'resolved_year' approaching missing value threshold: 19.97%
+2025-12-05 15:53:39,616 - DataValidator - WARNING - Column 'resolved_month' approaching missing value threshold: 19.97%
+2025-12-05 15:53:39,618 - DataValidator - WARNING - Column 'resolved_day_of_week' approaching missing value threshold: 19.97%
+2025-12-05 15:53:39,619 - DataValidator - WARNING - Column 'resolved_hour' approaching missing value threshold: 19.97%
+2025-12-05 15:53:39,623 - DataValidator - INFO - Missing values validation: PASSED
+2025-12-05 15:53:39,623 - DataValidator - INFO - Validating status values...
+2025-12-05 15:53:39,625 - DataValidator - INFO - Status 'In Progress': 8416 records (16.9%)
+2025-12-05 15:53:39,626 - DataValidator - INFO - Status 'New': 8360 records (16.8%)
+2025-12-05 15:53:39,626 - DataValidator - INFO - Status 'Closed': 8308 records (16.7%)
+2025-12-05 15:53:39,627 - DataValidator - INFO - Status 'Open': 8240 records (16.6%)
+2025-12-05 15:53:39,628 - DataValidator - INFO - Status 'Resolved': 8208 records (16.5%)
+2025-12-05 15:53:39,628 - DataValidator - INFO - Status 'On Hold': 8131 records (16.4%)
+2025-12-05 15:53:39,628 - DataValidator - INFO - Status values validation: PASSED
+2025-12-05 15:53:39,628 - DataValidator - INFO - Validating date rules...
+2025-12-05 15:53:39,646 - DataValidator - ERROR - 3551 tickets have future resolved_at dates
+2025-12-05 15:53:39,648 - DataValidator - INFO - Date rules validation: FAILED
+2025-12-05 15:53:39,648 - DataValidator - INFO - Identifying outliers...
+2025-12-05 15:53:39,654 - DataValidator - INFO - Outlier detection completed: 0 types of outliers found
+2025-12-05 15:53:39,655 - DataValidator - INFO - Validation completed:
+2025-12-05 15:53:39,655 - DataValidator - INFO -   - Overall result: FAILED
+2025-12-05 15:53:39,655 - DataValidator - INFO -   - Data quality score: 80.0/100
+2025-12-05 15:53:39,655 - DataValidator - INFO -   - Errors: 1
+2025-12-05 15:53:39,655 - DataValidator - INFO -   - Warnings: 5
+2025-12-05 15:53:39,657 - ETLPipeline - INFO - Validation completed: FAILED
+2025-12-05 15:53:39,657 - ETLPipeline - INFO - Data quality score: 80.0/100
+2025-12-05 15:53:39,657 - ETLPipeline - INFO - Detailed validation report saved: validation_report_20251205_155339.json
+2025-12-05 15:53:39,658 - ETLPipeline - WARNING - Validation failed, but continuing pipeline...
+2025-12-05 15:53:39,658 - ETLPipeline - INFO - Selecting final columns...
+2025-12-05 15:53:39,682 - ETLPipeline - INFO - Selected 38 columns for final output
+2025-12-05 15:53:39,682 - ETLPipeline - INFO - Final columns: ['ticket_id', 'subject', 'description', 'priority', 'status', 'category', 'severity', 'customer_id', 'assigned_agent', 'product', 'channel', 'origin', 'created_at', 'resolved_at', 'sla_breached', 'has_missing_critical', 'is_resolved', 'resolution_days', 'created_year', 'created_month', 'created_day_of_week', 'created_hour', 'created_quarter', 'resolved_year', 'resolved_month', 'resolved_day_of_week', 'resolved_hour', 'is_sla_breached', 'is_weekend_created', 'is_business_hours', 'subject_length', 'subject_word_count', 'description_length', 'description_word_count', 'priority_score', 'severity_score', 'status_group', 'age_days']
+2025-12-05 15:53:39,684 - ETLPipeline - INFO - Saving processed data...
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - Saved processed data: support_tickets_processed_20251205_155339.parquet
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - File size: 2,065,367 bytes
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - Final dataset: 49,663 rows, 38 columns
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - Pipeline report saved: etl_pipeline_report_20251205_155339.json
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - ============================================================
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - ETL PIPELINE COMPLETED SUCCESSFULLY
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - ============================================================
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - Input: 50,000 rows
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - Output: 49,663 rows
+2025-12-05 15:53:39,792 - ETLPipeline - INFO - Processed file: D:\September-AI\Pipeline-Project\data\processed\support_tickets_processed_20251205_155339.parquet

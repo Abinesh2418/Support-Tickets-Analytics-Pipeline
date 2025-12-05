@@ -1,0 +1,183 @@
+2025-12-02 10:55:54,935 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 10:55:54,935 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_105554.csv
+2025-12-02 10:55:54,942 - __main__ - INFO - Successfully ingested data file: tickets_20251202_105554.csv
+2025-12-02 10:55:54,942 - __main__ - INFO - File size: 3,945,533 bytes
+2025-12-02 10:56:39,985 - __main__ - INFO - 🚀 Starting data preprocessing pipeline...
+2025-12-02 10:56:39,985 - __main__ - INFO - Latest raw file identified: tickets_20251202_105554.csv
+2025-12-02 10:56:39,985 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_105554.csv
+2025-12-02 10:56:40,030 - __main__ - INFO - Loaded 8,469 rows and 17 columns
+2025-12-02 10:56:40,030 - __main__ - INFO - ✅ All required columns present in dataset
+2025-12-02 10:56:40,030 - __main__ - INFO - Cleaning missing values...
+2025-12-02 10:56:40,030 - __main__ - INFO - Processing datetime columns...
+2025-12-02 10:56:40,030 - __main__ - INFO - ✅ Processed Date of Purchase column
+2025-12-02 10:56:40,046 - __main__ - INFO - ✅ Processed Time to Resolution column
+2025-12-02 10:56:40,046 - __main__ - INFO - Adding derived features...
+2025-12-02 10:56:40,075 - __main__ - INFO - ✅ Added derived features
+2025-12-02 10:56:40,092 - __main__ - INFO - Removed 0 duplicate rows (8,469 -> 8,469)
+2025-12-02 10:56:40,095 - __main__ - INFO - Selected 28 columns for final dataset
+2025-12-02 10:56:49,310 - __main__ - INFO - ✅ Saved processed data: tickets_clean_20251202_105640.parquet
+2025-12-02 10:56:49,310 - __main__ - INFO - File size: 1,245,426 bytes
+2025-12-02 10:56:49,310 - __main__ - INFO - Rows: 8,469, Columns: 28
+2025-12-02 10:56:49,310 - __main__ - INFO - ✅ Data preprocessing pipeline completed successfully!
+2025-12-02 11:11:35,709 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 11:11:35,709 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_111135.csv
+2025-12-02 11:11:35,716 - __main__ - INFO - Successfully ingested data file: tickets_20251202_111135.csv
+2025-12-02 11:11:35,716 - __main__ - INFO - File size: 3,945,533 bytes
+2025-12-02 11:12:21,536 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 11:12:21,539 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_111221.csv
+2025-12-02 11:12:21,541 - __main__ - INFO - Successfully ingested data file: tickets_20251202_111221.csv
+2025-12-02 11:12:21,541 - __main__ - INFO - File size: 3,945,533 bytes
+2025-12-02 11:12:21,869 - __main__ - INFO - 🚀 Starting data preprocessing pipeline...
+2025-12-02 11:12:21,869 - __main__ - INFO - Latest raw file identified: tickets_20251202_105554.csv
+2025-12-02 11:12:21,869 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_105554.csv
+2025-12-02 11:12:21,910 - __main__ - INFO - Loaded 8,469 rows and 17 columns
+2025-12-02 11:12:21,910 - __main__ - INFO - ✅ All required columns present in dataset
+2025-12-02 11:12:21,910 - __main__ - INFO - Cleaning missing values...
+2025-12-02 11:12:21,910 - __main__ - INFO - Processing datetime columns...
+2025-12-02 11:12:21,910 - __main__ - INFO - ✅ Processed Date of Purchase column
+2025-12-02 11:12:21,922 - __main__ - INFO - ✅ Processed Time to Resolution column
+2025-12-02 11:12:21,922 - __main__ - INFO - Adding derived features...
+2025-12-02 11:12:21,945 - __main__ - INFO - ✅ Added derived features
+2025-12-02 11:12:21,951 - __main__ - INFO - Removed 0 duplicate rows (8,469 -> 8,469)
+2025-12-02 11:12:21,951 - __main__ - INFO - Selected 28 columns for final dataset
+2025-12-02 11:12:22,000 - __main__ - INFO - ✅ Saved processed data: tickets_clean_20251202_111221.parquet
+2025-12-02 11:12:22,000 - __main__ - INFO - File size: 1,245,426 bytes
+2025-12-02 11:12:22,000 - __main__ - INFO - Rows: 8,469, Columns: 28
+2025-12-02 11:12:22,000 - __main__ - INFO - ✅ Data preprocessing pipeline completed successfully!
+2025-12-02 11:15:14,346 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 11:15:14,346 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_111514.csv
+2025-12-02 11:15:14,362 - __main__ - INFO - Successfully ingested data file: tickets_20251202_111514.csv
+2025-12-02 11:15:14,362 - __main__ - INFO - File size: 3,945,533 bytes
+2025-12-02 11:15:14,693 - __main__ - INFO - 🚀 Starting data preprocessing pipeline...
+2025-12-02 11:15:14,693 - __main__ - INFO - Latest raw file identified: tickets_20251202_105554.csv
+2025-12-02 11:15:14,693 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_105554.csv
+2025-12-02 11:15:14,717 - __main__ - INFO - Loaded 8,469 rows and 17 columns
+2025-12-02 11:15:14,717 - __main__ - INFO - ✅ All required columns present in dataset
+2025-12-02 11:15:14,717 - __main__ - INFO - Cleaning missing values...
+2025-12-02 11:15:14,717 - __main__ - INFO - Processing datetime columns...
+2025-12-02 11:15:14,733 - __main__ - INFO - ✅ Processed Date of Purchase column
+2025-12-02 11:15:14,736 - __main__ - INFO - ✅ Processed Time to Resolution column
+2025-12-02 11:15:14,736 - __main__ - INFO - Adding derived features...
+2025-12-02 11:15:14,761 - __main__ - INFO - ✅ Added derived features
+2025-12-02 11:15:14,769 - __main__ - INFO - Removed 0 duplicate rows (8,469 -> 8,469)
+2025-12-02 11:15:14,771 - __main__ - INFO - Selected 28 columns for final dataset
+2025-12-02 11:15:14,797 - __main__ - INFO - ✅ Saved processed data: tickets_clean_20251202_111514.parquet
+2025-12-02 11:15:14,797 - __main__ - INFO - File size: 1,245,426 bytes
+2025-12-02 11:15:14,797 - __main__ - INFO - Rows: 8,469, Columns: 28
+2025-12-02 11:15:14,797 - __main__ - INFO - ✅ Data preprocessing pipeline completed successfully!
+2025-12-02 11:16:48,532 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 11:16:48,532 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_111648.csv
+2025-12-02 11:16:48,534 - __main__ - INFO - Successfully ingested data file: tickets_20251202_111648.csv
+2025-12-02 11:16:48,534 - __main__ - INFO - File size: 3,945,533 bytes
+2025-12-02 11:16:48,848 - __main__ - INFO - 🚀 Starting data preprocessing pipeline...
+2025-12-02 11:16:48,848 - __main__ - INFO - Latest raw file identified: tickets_20251202_105554.csv
+2025-12-02 11:16:48,848 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_105554.csv
+2025-12-02 11:16:48,881 - __main__ - INFO - Loaded 8,469 rows and 17 columns
+2025-12-02 11:16:48,881 - __main__ - INFO - ✅ All required columns present in dataset
+2025-12-02 11:16:48,881 - __main__ - INFO - Cleaning missing values...
+2025-12-02 11:16:48,882 - __main__ - INFO - Processing datetime columns...
+2025-12-02 11:16:48,887 - __main__ - INFO - ✅ Processed Date of Purchase column
+2025-12-02 11:16:48,888 - __main__ - INFO - ✅ Processed Time to Resolution column
+2025-12-02 11:16:48,888 - __main__ - INFO - Adding derived features...
+2025-12-02 11:16:48,903 - __main__ - INFO - ✅ Added derived features
+2025-12-02 11:16:48,919 - __main__ - INFO - Removed 0 duplicate rows (8,469 -> 8,469)
+2025-12-02 11:16:48,919 - __main__ - INFO - Selected 28 columns for final dataset
+2025-12-02 11:16:48,963 - __main__ - INFO - ✅ Saved processed data: tickets_clean_20251202_111648.parquet
+2025-12-02 11:16:48,963 - __main__ - INFO - File size: 1,245,426 bytes
+2025-12-02 11:16:48,963 - __main__ - INFO - Rows: 8,469, Columns: 28
+2025-12-02 11:16:48,963 - __main__ - INFO - ✅ Data preprocessing pipeline completed successfully!
+2025-12-02 11:26:37,372 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 11:26:37,372 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_112637.csv
+2025-12-02 11:26:37,388 - __main__ - INFO - Successfully ingested data file: tickets_20251202_112637.csv
+2025-12-02 11:26:37,388 - __main__ - INFO - File size: 3,945,533 bytes
+2025-12-02 11:26:37,877 - __main__ - INFO - 🚀 Starting data preprocessing pipeline...
+2025-12-02 11:26:37,877 - __main__ - INFO - Latest raw file identified: tickets_20251202_105554.csv
+2025-12-02 11:26:37,877 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_105554.csv
+2025-12-02 11:26:37,925 - __main__ - INFO - Loaded 8,469 rows and 17 columns
+2025-12-02 11:26:37,925 - __main__ - INFO - ✅ All required columns present in dataset
+2025-12-02 11:26:37,925 - __main__ - INFO - Cleaning missing values...
+2025-12-02 11:26:37,932 - __main__ - INFO - Processing datetime columns...
+2025-12-02 11:26:37,932 - __main__ - INFO - ✅ Processed Date of Purchase column
+2025-12-02 11:26:37,940 - __main__ - INFO - ✅ Processed Time to Resolution column
+2025-12-02 11:26:37,940 - __main__ - INFO - Adding derived features...
+2025-12-02 11:26:37,972 - __main__ - INFO - ✅ Added derived features
+2025-12-02 11:26:37,994 - __main__ - INFO - Removed 0 duplicate rows (8,469 -> 8,469)
+2025-12-02 11:26:37,998 - __main__ - INFO - Selected 28 columns for final dataset
+2025-12-02 11:26:38,052 - __main__ - INFO - ✅ Saved processed data: tickets_clean_20251202_112638.parquet
+2025-12-02 11:26:38,052 - __main__ - INFO - File size: 1,245,426 bytes
+2025-12-02 11:26:38,052 - __main__ - INFO - Rows: 8,469, Columns: 28
+2025-12-02 11:26:38,052 - __main__ - INFO - ✅ Data preprocessing pipeline completed successfully!
+2025-12-02 12:06:15,498 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 12:06:15,498 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_120615.csv
+2025-12-02 12:06:15,502 - __main__ - INFO - Successfully ingested data file: tickets_20251202_120615.csv
+2025-12-02 12:06:15,502 - __main__ - INFO - File size: 3,945,533 bytes
+2025-12-02 12:06:16,021 - __main__ - INFO - 🚀 Starting data preprocessing pipeline...
+2025-12-02 12:06:16,023 - __main__ - INFO - Latest raw file identified: tickets_20251202_120615.csv
+2025-12-02 12:06:16,023 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_120615.csv
+2025-12-02 12:06:16,068 - __main__ - INFO - Loaded 8,469 rows and 17 columns
+2025-12-02 12:06:16,069 - __main__ - INFO - ✅ All required columns present in dataset
+2025-12-02 12:06:16,069 - __main__ - INFO - Cleaning missing values...
+2025-12-02 12:06:16,070 - __main__ - INFO - Processing datetime columns...
+2025-12-02 12:06:16,073 - __main__ - INFO - ✅ Processed Date of Purchase column
+2025-12-02 12:06:16,073 - __main__ - INFO - ✅ Processed Time to Resolution column
+2025-12-02 12:06:16,073 - __main__ - INFO - Adding derived features...
+2025-12-02 12:06:16,119 - __main__ - INFO - ✅ Added derived features
+2025-12-02 12:06:16,119 - __main__ - INFO - Removed 0 duplicate rows (8,469 -> 8,469)
+2025-12-02 12:06:16,119 - __main__ - INFO - Selected 28 columns for final dataset
+2025-12-02 12:06:16,183 - __main__ - INFO - ✅ Saved processed data: tickets_clean_20251202_120616.parquet
+2025-12-02 12:06:16,183 - __main__ - INFO - File size: 1,245,426 bytes
+2025-12-02 12:06:16,183 - __main__ - INFO - Rows: 8,469, Columns: 28
+2025-12-02 12:06:16,183 - __main__ - INFO - ✅ Data preprocessing pipeline completed successfully!
+2025-12-02 12:32:31,423 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 12:32:31,423 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_123231.csv
+2025-12-02 12:32:31,438 - __main__ - INFO - Successfully ingested data file: tickets_20251202_123231.csv
+2025-12-02 12:32:31,439 - __main__ - INFO - File size: 3,421,431 bytes
+2025-12-02 12:34:00,089 - __main__ - ERROR - File not found error: Source file not found: D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 12:35:14,620 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 12:35:14,620 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_123514.csv
+2025-12-02 12:35:14,634 - __main__ - INFO - Successfully ingested data file: tickets_20251202_123514.csv
+2025-12-02 12:35:14,634 - __main__ - INFO - File size: 3,421,431 bytes
+2025-12-02 12:35:16,682 - __main__ - INFO - Starting data preprocessing pipeline...
+2025-12-02 12:35:16,682 - __main__ - INFO - Latest raw file identified: tickets_20251202_123514.csv
+2025-12-02 12:35:16,682 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_123514.csv
+2025-12-02 12:35:16,885 - __main__ - INFO - Loaded 14,640 rows and 15 columns
+2025-12-02 12:35:16,885 - __main__ - ERROR - ❌ Pipeline failed: Required columns missing: ['Ticket ID', 'Customer Name', 'Customer Email', 'Ticket Subject', 'Ticket Description', 'Ticket Status', 'Ticket Priority', 'Date of Purchase']
+2025-12-02 12:35:38,005 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 12:35:38,006 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_123538.csv
+2025-12-02 12:35:38,011 - __main__ - INFO - Successfully ingested data file: tickets_20251202_123538.csv
+2025-12-02 12:35:38,011 - __main__ - INFO - File size: 3,421,431 bytes
+2025-12-02 12:35:39,964 - __main__ - INFO - Starting data preprocessing pipeline...
+2025-12-02 12:35:39,967 - __main__ - INFO - Latest raw file identified: tickets_20251202_123538.csv
+2025-12-02 12:35:39,967 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_123538.csv
+2025-12-02 12:35:40,179 - __main__ - INFO - Loaded 14,640 rows and 15 columns
+2025-12-02 12:35:40,180 - __main__ - ERROR - ❌ Pipeline failed: Required columns missing: ['Ticket ID', 'Customer Name', 'Customer Email', 'Ticket Subject', 'Ticket Description', 'Ticket Status', 'Ticket Priority', 'Date of Purchase']
+2025-12-02 12:36:39,102 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 12:36:39,103 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_123639.csv
+2025-12-02 12:36:39,115 - __main__ - INFO - Successfully ingested data file: tickets_20251202_123639.csv
+2025-12-02 12:36:39,115 - __main__ - INFO - File size: 3,421,431 bytes
+2025-12-02 12:36:41,442 - __main__ - INFO - Starting data preprocessing pipeline...
+2025-12-02 12:36:41,442 - __main__ - INFO - Latest raw file identified: tickets_20251202_123639.csv
+2025-12-02 12:36:41,442 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_123639.csv
+2025-12-02 12:36:41,657 - __main__ - INFO - Loaded 14,640 rows and 15 columns
+2025-12-02 12:36:41,657 - __main__ - ERROR - ❌ Pipeline failed: Required columns missing: ['Ticket ID', 'Customer Name', 'Customer Email', 'Ticket Subject', 'Ticket Description', 'Ticket Status', 'Ticket Priority', 'Date of Purchase']
+2025-12-02 12:43:03,997 - __main__ - INFO - Starting data ingestion from D:\September-AI\Pipeline-Project\source\tickets.csv
+2025-12-02 12:43:03,997 - __main__ - INFO - Destination: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_124303.csv
+2025-12-02 12:43:04,011 - __main__ - INFO - Successfully ingested data file: tickets_20251202_124303.csv
+2025-12-02 12:43:04,011 - __main__ - INFO - File size: 3,421,431 bytes
+2025-12-02 12:43:05,153 - __main__ - INFO - Starting data preprocessing pipeline...
+2025-12-02 12:43:05,154 - __main__ - INFO - Latest raw file identified: tickets_20251202_124303.csv
+2025-12-02 12:43:05,154 - __main__ - INFO - Loading data from: D:\September-AI\Pipeline-Project\data\raw\tickets_20251202_124303.csv
+2025-12-02 12:43:05,354 - __main__ - INFO - Loaded 14,640 rows and 15 columns
+2025-12-02 12:43:05,355 - __main__ - INFO - All required columns present in dataset
+2025-12-02 12:43:05,355 - __main__ - INFO - Cleaning missing values...
+2025-12-02 12:43:05,368 - __main__ - INFO - Filled 5,462 missing values in 'negativereason' with 'Not Specified'
+2025-12-02 12:43:05,369 - __main__ - INFO - Processing datetime columns...
+2025-12-02 12:43:06,223 - __main__ - INFO - Processed tweet_created column
+2025-12-02 12:43:06,223 - __main__ - INFO - Adding derived features...
+2025-12-02 12:43:06,393 - __main__ - INFO - Added derived features
+2025-12-02 12:43:06,407 - __main__ - INFO - Removed 155 duplicate rows (14,640 -> 14,485)
+2025-12-02 12:43:06,438 - __main__ - INFO - Selected 25 columns for final dataset
+2025-12-02 12:43:06,702 - __main__ - INFO - Saved processed data: tickets_clean_20251202_124306.parquet
+2025-12-02 12:43:06,702 - __main__ - INFO - File size: 1,519,309 bytes
+2025-12-02 12:43:06,702 - __main__ - INFO - Rows: 14,485, Columns: 25
+2025-12-02 12:43:06,702 - __main__ - INFO - Data preprocessing pipeline completed successfully!

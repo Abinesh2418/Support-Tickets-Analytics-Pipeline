@@ -1,0 +1,95 @@
+2025-12-02 11:48:10,247 - INFO - Deleted: tickets_20251202_105554.csv (3,945,533 bytes)
+2025-12-02 11:48:10,247 - INFO - Deleted: tickets_20251202_111135.csv (3,945,533 bytes)
+2025-12-02 11:48:10,247 - INFO - Deleted: tickets_20251202_111221.csv (3,945,533 bytes)
+2025-12-02 11:48:10,247 - INFO - Deleted: tickets_20251202_111514.csv (3,945,533 bytes)
+2025-12-02 11:48:10,262 - INFO - Deleted: tickets_20251202_111648.csv (3,945,533 bytes)
+2025-12-02 11:48:10,263 - INFO - Deleted: tickets_20251202_112637.csv (3,945,533 bytes)
+2025-12-02 11:48:10,263 - INFO - Deleted 6 files from data\raw (Total: 23,673,198 bytes)
+2025-12-02 11:48:10,265 - INFO - Deleted: tickets_clean_20251202_105640.parquet (1,245,426 bytes)
+2025-12-02 11:48:10,266 - INFO - Deleted: tickets_clean_20251202_111221.parquet (1,245,426 bytes)
+2025-12-02 11:48:10,267 - INFO - Deleted: tickets_clean_20251202_111514.parquet (1,245,426 bytes)
+2025-12-02 11:48:10,268 - INFO - Deleted: tickets_clean_20251202_111648.parquet (1,245,426 bytes)
+2025-12-02 11:48:10,268 - INFO - Deleted: tickets_clean_20251202_112638.parquet (1,245,426 bytes)
+2025-12-02 11:48:10,269 - INFO - Deleted 5 files from data\processed (Total: 6,227,130 bytes)
+2025-12-02 11:48:10,269 - INFO - Cleanup completed. Total files deleted: 11
+2025-12-02 12:33:43,681 - INFO - Deleted: tickets_20251202_120615.csv (3,945,533 bytes)
+2025-12-02 12:33:43,681 - INFO - Deleted: tickets_20251202_123231.csv (3,421,431 bytes)
+2025-12-02 12:33:43,681 - INFO - Deleted 2 files from data\raw (Total: 7,366,964 bytes)
+2025-12-02 12:33:43,681 - INFO - Deleted: tickets_clean_20251202_120616.parquet (1,245,426 bytes)
+2025-12-02 12:33:43,681 - INFO - Deleted 1 files from data\processed (Total: 1,245,426 bytes)
+2025-12-02 12:33:43,681 - INFO - Cleanup completed. Total files deleted: 3
+2025-12-02 12:37:57,295 - INFO - Deleted: tickets_20251202_123514.csv (3,421,431 bytes)
+2025-12-02 12:37:57,295 - INFO - Deleted: tickets_20251202_123538.csv (3,421,431 bytes)
+2025-12-02 12:37:57,295 - INFO - Deleted: tickets_20251202_123639.csv (3,421,431 bytes)
+2025-12-02 12:37:57,310 - INFO - Deleted 3 files from data\raw (Total: 10,264,293 bytes)
+2025-12-02 12:37:57,310 - INFO - No files found to delete in: data\processed
+2025-12-02 12:37:57,311 - INFO - Cleanup completed. Total files deleted: 3
+2025-12-03 15:54:33,696 - INFO - Deleted: tickets_20251202_124303.csv (3,421,431 bytes)
+2025-12-03 15:54:33,696 - INFO - Deleted 1 files from data\raw (Total: 3,421,431 bytes)
+2025-12-03 15:54:33,711 - INFO - Deleted: tickets_clean_20251202_124306.parquet (1,519,309 bytes)
+2025-12-03 15:54:33,711 - INFO - Deleted 1 files from data\processed (Total: 1,519,309 bytes)
+2025-12-03 15:54:33,712 - INFO - Cleanup completed. Total files deleted: 2
+2025-12-03 21:40:50,045 - INFO - Deleted: support_tickets_raw_20251203_212945.parquet (1,918,185 bytes)
+2025-12-03 21:40:50,046 - INFO - Deleted 1 files from data\raw (Total: 1,918,185 bytes)
+2025-12-03 21:40:50,048 - INFO - Deleted: support_tickets_processed_20251203_192211.parquet (2,075,629 bytes)
+2025-12-03 21:40:50,049 - INFO - Deleted: support_tickets_processed_20251203_193613.parquet (2,075,629 bytes)
+2025-12-03 21:40:50,050 - INFO - Deleted: support_tickets_processed_20251203_212132.parquet (2,071,328 bytes)
+2025-12-03 21:40:50,050 - INFO - Deleted: support_tickets_processed_20251203_212946.parquet (2,071,328 bytes)
+2025-12-03 21:40:50,050 - INFO - Deleted 4 files from data\processed (Total: 8,293,914 bytes)
+2025-12-03 21:40:50,051 - INFO - Deleted: etl_pipeline_report_20251203_192140.json (1,125 bytes)
+2025-12-03 21:40:50,053 - INFO - Deleted: etl_pipeline_report_20251203_192212.json (12,264 bytes)
+2025-12-03 21:40:50,053 - INFO - Deleted: etl_pipeline_report_20251203_193613.json (12,264 bytes)
+2025-12-03 21:40:50,054 - INFO - Deleted: etl_pipeline_report_20251203_212132.json (12,115 bytes)
+2025-12-03 21:40:50,054 - INFO - Deleted: etl_pipeline_report_20251203_212946.json (12,114 bytes)
+2025-12-03 21:40:50,054 - INFO - Deleted: validation_report_20251203_192211.json (7,764 bytes)
+2025-12-03 21:40:50,055 - INFO - Deleted: validation_report_20251203_193613.json (7,764 bytes)
+2025-12-03 21:40:50,055 - INFO - Deleted: validation_report_20251203_212132.json (7,621 bytes)
+2025-12-03 21:40:50,055 - INFO - Deleted: validation_report_20251203_212945.json (7,621 bytes)
+2025-12-03 21:40:50,056 - INFO - Deleted 9 files from data\reports (Total: 80,652 bytes)
+2025-12-03 21:40:50,057 - ERROR - Error deleting files from logs: [WinError 32] The process cannot access the file because it is being used by another process: 'logs\\cleanup.log'
+2025-12-03 21:40:50,057 - INFO - Removed file: database.sqlite (5,038,080 bytes)
+2025-12-03 21:40:50,059 - INFO - Removed directory: etl\scripts\__pycache__
+2025-12-03 21:40:50,061 - INFO - Cleanup completed. Total files deleted: 16
+2025-12-04 08:11:28,439 - INFO - Deleted: support_tickets_raw_20251203_215819.parquet (1,918,185 bytes)
+2025-12-04 08:11:28,439 - INFO - Deleted 1 files from data\raw (Total: 1,918,185 bytes)
+2025-12-04 08:11:28,445 - INFO - Deleted: support_tickets_processed_20251203_215820.parquet (2,071,328 bytes)
+2025-12-04 08:11:28,446 - INFO - Deleted 1 files from data\processed (Total: 2,071,328 bytes)
+2025-12-04 08:11:28,448 - INFO - Deleted: etl_pipeline_report_20251203_215820.json (12,115 bytes)
+2025-12-04 08:11:28,449 - INFO - Deleted: validation_report_20251203_215819.json (7,621 bytes)
+2025-12-04 08:11:28,449 - INFO - Deleted 2 files from data\reports (Total: 19,736 bytes)
+2025-12-04 08:11:28,451 - ERROR - Error deleting files from logs: [WinError 32] The process cannot access the file because it is being used by another process: 'logs\\cleanup.log'
+2025-12-04 08:11:28,453 - INFO - Removed directory: etl\scripts\__pycache__
+2025-12-04 08:11:28,454 - INFO - Cleanup completed. Total files deleted: 5
+2025-12-04 08:40:42,743 - INFO - Deleted: support_tickets_raw_20251204_082019.parquet (1,918,185 bytes)
+2025-12-04 08:40:42,750 - INFO - Deleted: support_tickets_raw_20251204_082224.parquet (1,918,185 bytes)
+2025-12-04 08:40:42,750 - INFO - Deleted 2 files from data\raw (Total: 3,836,370 bytes)
+2025-12-04 08:40:42,753 - INFO - Deleted: support_tickets_processed_20251204_082108.parquet (2,065,367 bytes)
+2025-12-04 08:40:42,754 - INFO - Deleted: support_tickets_processed_20251204_082313.parquet (2,065,367 bytes)
+2025-12-04 08:40:42,754 - INFO - Deleted 2 files from data\processed (Total: 4,130,734 bytes)
+2025-12-04 08:40:42,755 - INFO - Deleted: etl_pipeline_report_20251204_082108.json (12,116 bytes)
+2025-12-04 08:40:42,755 - INFO - Deleted: etl_pipeline_report_20251204_082313.json (12,116 bytes)
+2025-12-04 08:40:42,755 - INFO - Deleted: validation_report_20251204_082108.json (7,621 bytes)
+2025-12-04 08:40:42,757 - INFO - Deleted: validation_report_20251204_082313.json (7,621 bytes)
+2025-12-04 08:40:42,757 - INFO - Deleted 4 files from data\reports (Total: 39,474 bytes)
+2025-12-04 08:40:42,757 - ERROR - Error deleting files from logs: [WinError 32] The process cannot access the file because it is being used by another process: 'logs\\cleanup.log'
+2025-12-04 08:40:42,758 - INFO - Removed directory: etl\scripts\__pycache__
+2025-12-04 08:40:42,760 - INFO - Cleanup completed. Total files deleted: 9
+2025-12-05 15:50:23,984 - INFO - Deleted: support_tickets_raw_20251204_084056.parquet (1,918,185 bytes)
+2025-12-05 15:50:23,985 - INFO - Deleted 1 files from data\raw (Total: 1,918,185 bytes)
+2025-12-05 15:50:23,987 - INFO - Deleted: support_tickets_processed_20251204_084143.parquet (2,065,367 bytes)
+2025-12-05 15:50:23,988 - INFO - Deleted 1 files from data\processed (Total: 2,065,367 bytes)
+2025-12-05 15:50:23,989 - INFO - Deleted: etl_pipeline_report_20251204_084143.json (12,116 bytes)
+2025-12-05 15:50:23,989 - INFO - Deleted: validation_report_20251204_084143.json (7,621 bytes)
+2025-12-05 15:50:23,991 - INFO - Deleted 2 files from data\reports (Total: 19,737 bytes)
+2025-12-05 15:50:23,994 - ERROR - Error deleting files from logs: [WinError 32] The process cannot access the file because it is being used by another process: 'logs\\cleanup.log'
+2025-12-05 15:50:23,998 - INFO - Cleanup completed. Total files deleted: 4
+2025-12-05 15:57:06,741 - INFO - Deleted: support_tickets_raw_20251205_155227.parquet (1,918,185 bytes)
+2025-12-05 15:57:06,741 - INFO - Deleted 1 files from data\raw (Total: 1,918,185 bytes)
+2025-12-05 15:57:06,741 - INFO - Deleted: support_tickets_processed_20251205_155339.parquet (2,065,367 bytes)
+2025-12-05 15:57:06,741 - INFO - Deleted 1 files from data\processed (Total: 2,065,367 bytes)
+2025-12-05 15:57:06,752 - INFO - Deleted: etl_pipeline_report_20251205_155339.json (12,116 bytes)
+2025-12-05 15:57:06,753 - INFO - Deleted: validation_report_20251205_155339.json (7,621 bytes)
+2025-12-05 15:57:06,754 - INFO - Deleted 2 files from data\reports (Total: 19,737 bytes)
+2025-12-05 15:57:06,755 - ERROR - Error deleting files from logs: [WinError 32] The process cannot access the file because it is being used by another process: 'logs\\cleanup.log'
+2025-12-05 15:57:06,757 - INFO - Removed directory: etl\scripts\__pycache__
+2025-12-05 15:57:06,759 - INFO - Cleanup completed. Total files deleted: 5

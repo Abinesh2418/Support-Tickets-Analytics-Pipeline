@@ -1,0 +1,19 @@
+Architecture Diagram:
+Source CSV → Ingestion → Raw → Preprocessing → Processed → Streamlit Dashboard
+
+Detailed Flow:
+1. source/tickets.csv (Original Dataset)
+   ↓
+2. etl/ingest_csv.py (Data Ingestion)
+   ↓
+3. data/raw/tickets_YYYYMMDD_HHMMSS.csv (Timestamped Raw Data)
+   ↓
+4. etl/preprocess.py (Data Cleaning & Transformation)
+   ↓
+5. data/processed/tickets_clean_YYYYMMDD_HHMMSS.parquet (Processed Data)
+   ↓
+6. dashboard/app.py (Streamlit Visualization Dashboard)
+
+Configuration: etl/config.yaml
+Logging: logs/pipeline.log
+Execution: run_pipeline.sh

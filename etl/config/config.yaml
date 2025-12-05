@@ -1,0 +1,221 @@
+# ETL Pipeline Configuration
+# Configuration for modular cleaning, transformation, and validation pipeline
+
+# Data Source Configuration
+data_source:
+  input_path: "source/SupportTickets_50k.csv"
+  encoding: "utf-8"
+  
+# Output Configuration
+output:
+  processed_data_path: "data/processed"
+  raw_data_path: "data/raw"
+  reports_path: "data/reports"
+  compression: "snappy"
+
+# ===============================
+# CLEANING MODULE CONFIGURATION
+# ===============================
+
+# Missing Value Handling Rules - Advanced Imputation Techniques
+missing_value_strategy:
+  # Mode imputation for categorical fields
+  categorical_fields:
+    - "category"
+    - "product" 
+    - "channel"
+    - "origin"
+  
+  # Forward fill with intelligent fallback for agent assignment
+  agent_assignment:
+    method: "customer_pattern_ffill"
+    fallback: "priority_based"
+    final_fallback: "mode"
+  
+  # Similarity-based imputation for text fields
+  text_fields:
+    description:
+      method: "subject_similarity"
+      fallback: "template_generation"
+  
+  # Regression-based imputation
+  severity:
+    method: "priority_mapping"
+    fallback: "mode"
+  
+  # Business rule: keep null for specific fields
+  business_null_fields:
+    - "resolved_at"  # Null means unresolved
+
+# Text Normalization Rules
+text_normalization:
+  trim_whitespace: true
+  standardize_case: true
+  fix_inconsistent_values: true
+
+# ===============================
+# TRANSFORMATION MODULE CONFIGURATION  
+# ===============================
+
+# Data Type Conversions
+data_types:
+  ticket_id: "int"
+  customer_id: "int" 
+  created_at: "datetime"
+  resolved_at: "datetime"
+  sla_breached: "bool"
+  subject: "string"
+  description: "string"
+  priority: "category"
+  status: "category"
+  category: "category"
+  origin: "category"
+  assigned_agent: "string"
+  product: "category"
+  channel: "category"
+  severity: "category"
+
+# Categorical Encoding Configuration
+categorical_encoding:
+  priority: "label"      # Label encoding for ordinal data
+  severity: "label"      # Label encoding for ordinal data  
+  # category: "onehot"   # Uncomment for one-hot encoding
+  # channel: "onehot"    # Uncomment for one-hot encoding
+
+# Derived Features Configuration
+derived_features:
+  create_time_features: true
+  create_text_features: true
+  create_business_logic_features: true
+  create_scoring_features: true
+
+# ===============================
+# VALIDATION MODULE CONFIGURATION
+# ===============================
+
+# Required Fields (must be present and not null)
+required_fields:
+  - "ticket_id"
+  - "subject" 
+  - "priority"
+  - "status"
+  - "created_at"
+  - "customer_id"
+
+# Allowed Values for Categorical Fields
+allowed_status_values:
+  - "Open"
+  - "Closed"
+  - "Pending" 
+  - "Resolved"
+  - "In Progress"
+  - "New"
+  - "On Hold"
+
+allowed_priority_values:
+  - "Low"
+  - "Medium"
+  - "High"
+  - "Critical"
+
+allowed_severity_values:
+  - "Trivial"
+  - "Minor"
+  - "Major"
+  - "Critical"
+
+# Missing Value Thresholds (percentage)
+missing_value_thresholds:
+  ticket_id: 0           # No missing values allowed
+  subject: 5             # Up to 5% missing allowed
+  status: 0              # No missing values allowed
+  priority: 5            # Up to 5% missing allowed
+  created_at: 0          # No missing values allowed
+  resolved_at: 60        # Up to 60% missing (unresolved tickets)
+  assigned_agent: 15     # Up to 15% missing allowed
+  customer_id: 5         # Up to 5% missing allowed
+  category: 10           # Up to 10% missing allowed
+  product: 10            # Up to 10% missing allowed
+  channel: 10            # Up to 10% missing allowed
+  status_group: 5        # Up to 5% missing allowed for derived status grouping
+
+# Business Rules
+business_rules:
+  max_resolution_days: 900        # Flag tickets resolved > 900 days as outliers
+  max_subject_length: 1000        # Flag subjects longer than 1000 chars
+  max_description_length: 10000   # Flag descriptions longer than 10000 chars
+  min_year: 2010                  # Minimum year for created_at
+  
+# Data Quality Scoring Weights
+data_quality_weights:
+  required_fields: 40      # 40% weight for required fields
+  missing_values: 25       # 25% weight for missing value compliance
+  business_rules: 20       # 20% weight for business rule compliance
+  data_consistency: 15     # 15% weight for data consistency
+
+# ===============================
+# PIPELINE EXECUTION CONFIGURATION
+# ===============================
+
+# Pipeline Steps Configuration
+pipeline:
+  enable_cleaning: true
+  enable_transformation: true
+  enable_validation: true
+  
+  # Step execution order
+  execution_order:
+    - "cleaning"
+    - "transformation"  
+    - "validation"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_output: true
+  console_output: true
+
+# Processing Options
+processing:
+  remove_duplicates: true
+  validate_data_types: true
+  create_backup: true
+  parallel_processing: false
+
+# Column Selection for Final Output
+final_columns:
+  # Core ticket information
+  core_fields:
+    - "ticket_id"
+    - "subject"
+    - "description"  
+    - "priority"
+    - "status"
+    - "category"
+    - "severity"
+    - "customer_id"
+    - "assigned_agent"
+    - "product"
+    - "channel"
+    - "origin"
+    
+  # Date/time fields
+  datetime_fields:
+    - "created_at"
+    - "resolved_at"
+    
+  # Derived features (automatically added during transformation)
+  include_derived_features: true
+  
+  # Flags and metadata
+  metadata_fields:
+    - "sla_breached"
+    - "has_missing_critical"
+    - "is_resolved"
+
+# Performance Configuration
+performance:
+  chunk_size: 10000
+  memory_optimization: true
+  progress_tracking: true
